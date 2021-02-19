@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "Bjs"
+  spec.name         = "Bionic-js"
   spec.version      = "1.0.0"
   spec.summary      = "Run effectively JS code in Swift and ObjectiveC projects"
 
@@ -31,7 +31,7 @@ Pod::Spec.new do |spec|
   3. use JS classes from native Swift and ObjectiveC code, as if they were native classes
                    DESC
 
-  spec.homepage     = "https://github.com/Forge-Srl/bionic-js"
+  spec.homepage     = "https://github.com/Forge-Srl/bionic-js-runtime-swift"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -42,7 +42,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = { :type => "MIT", :file => "../LICENSE.md" }
+  spec.license      = { :type => "MIT", :file => "LICENSE.md" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -55,7 +55,10 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Marco Vanetti" => "marco.vanetti@gmail.com" }
+  spec.authors             = { 
+      "Marco Vanetti" => "marco.vanetti@gmail.com",
+      "Tommaso Bossi" => "tommasobossi95+github@gmail.com"
+  }
   # Or just: spec.author    = "Marco Vanetti"
   # spec.authors            = { "Marco Vanetti" => "marco.vanetti@gmail.com" }
   # spec.social_media_url   = "https://twitter.com/Marco Vanetti"
@@ -82,8 +85,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :http => 'file:' + __dir__ + '/Bjs.zip' }
-  #spec.source       = { :git => "http://EXAMPLE/bionicjs.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/Forge-Srl/bionic-js-runtime-swift.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
