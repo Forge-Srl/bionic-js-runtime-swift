@@ -50,8 +50,6 @@ class ToyClass1Test: XCTestCase {
     }
     
     func testLambdaAutoProp() {
-        XCTAssertNil(ToyClass1.lambdaAutoProp)
-        
         ToyClass1.lambdaAutoProp = { string in
             if string == nil {
                 return "null!"
