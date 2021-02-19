@@ -1,0 +1,7 @@
+excluded:
+  - Carthage
+  - Pods
+  - BjsTestApp
+  - BjsTests
+
+force_cast: warning
