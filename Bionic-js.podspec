@@ -13,20 +13,20 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/Forge-Srl/bionic-js-runtime-swift"
   spec.license      = { :type => "MIT", :file => "LICENSE.md" }
   spec.authors      = {
-      "Marco Vanetti" => "marco.vanetti@gmail.com",
-      "Tommaso Bossi" => "tommaso.bossi@forge.srl"
+    "Marco Vanetti" => "marco.vanetti@gmail.com",
+    "Tommaso Bossi" => "tommaso.bossi@forge.srl"
   }
 
   spec.source       = {
-      :git => "https://github.com/Forge-Srl/bionic-js-runtime-swift.git",
-      :tag => "release/#{spec.version}"
+    :git => "https://github.com/Forge-Srl/bionic-js-runtime-swift.git",
+    :tag => "release/#{spec.version}"
   }
 
+  spec.module_name   = "Bjs"
   spec.source_files  = "Bjs"
   spec.swift_version = "4.2"
   spec.ios.deployment_target = "10.0"
   spec.osx.deployment_target = "10.15"
   spec.framework     = "JavaScriptCore"
   spec.ios.framework = 'UIKit'
-
 end
