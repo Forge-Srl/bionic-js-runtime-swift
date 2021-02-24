@@ -1,0 +1,17 @@
+name: Release bionic.js Swift
+
+on:
+  push:
+    tags:
+      - 'release/**'
+
+jobs:
+  release_current_version:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Release on CocoaPods
+        env:
+          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TOKEN }}
+        run: |
+          pod trunk push Bionic-js.podspec

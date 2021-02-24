@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - 'main'
+    tags-ignore:
+      - 'release/**'
 
   # Allows to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -12,7 +14,12 @@ jobs:
   build_and_test:
     strategy:
       matrix:
-        destination: ['platform=OS X'] #TODO: add iOS simulators
+        destination: [
+            'platform=OS X',
+            'platform=iOS Simulator,name=iPhone 8,OS=11.4',
+            'platform=iOS Simulator,name=iPhone 8,OS=13.5',
+            'platform=iOS Simulator,name=iPhone 8,OS=14.3'
+        ]
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
