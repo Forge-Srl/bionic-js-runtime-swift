@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "Bionic-js"
-  spec.version      = "1.0.0"
+  spec.version      = "0.1.0"
   spec.summary      = "Run effectively JS code in Swift and ObjectiveC projects"
   spec.description  = <<-DESC
   Bionic.js let you share the business logic between different native languages without using any framework and without writing a single line of bridging code.
