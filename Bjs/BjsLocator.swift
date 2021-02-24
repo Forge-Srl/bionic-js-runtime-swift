@@ -14,7 +14,7 @@ public class BjsLocator {
     }
 
     var isInvalid: Bool {
-        projectName == "" || moduleName == ""
+        return projectName == "" || moduleName == ""
     }
 
     var get: Bjs {

@@ -2,8 +2,8 @@ import JavaScriptCore
 
 open class BjsNativeWrapper {
 
-    open class var bjsLocator: BjsLocator { BjsLocator() }
-    open class var bjs: Bjs { bjsLocator.get }
+    open class var bjsLocator: BjsLocator { return BjsLocator() }
+    open class var bjs: Bjs { return bjsLocator.get }
 
     class func bjsGetNativeFunctions(_ context: BjsContext) -> JSValue? {
         let nativeExports = context.createNativeExports()

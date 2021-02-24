@@ -2,9 +2,9 @@ import JavaScriptCore
 
 open class BjsObject: Hashable {
 
-    open class var bjsLocator: BjsLocator { BjsLocator() }
-    open class var bjs: Bjs { bjsLocator.get }
-    private var bjs: Bjs { type(of: self).bjsLocator.get }
+    open class var bjsLocator: BjsLocator { return BjsLocator() }
+    open class var bjs: Bjs { return bjsLocator.get }
+    private var bjs: Bjs { return type(of: self).bjsLocator.get }
 
     public let bjsObj: JSValue
 
