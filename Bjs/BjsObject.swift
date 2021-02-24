@@ -18,7 +18,7 @@ open class BjsObject: Hashable {
         bjs.createNativeObj(bjsObj, self)
     }
 
-    public class var bjsClass: JSValue { bjs.loadModule(bjsLocator.moduleName) }
+    public class var bjsClass: JSValue { return bjs.loadModule(bjsLocator.moduleName) }
 
     // JS FUNCTIONS CALL
 

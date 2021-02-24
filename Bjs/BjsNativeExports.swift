@@ -9,7 +9,7 @@ public class BjsNativeExports {
     init(_ context: JSContext) {
         exportsObj = JSValue.init(newObjectIn: context)
         nativeObj = JSValue.init(newObjectIn: context)
-        exportsObj.setObject(nativeObj, forKeyedSubscript: BjsNativeExports.nativeObjName)
+        exportsObj.setObject(nativeObj, forKeyedSubscript: BjsNativeExports.nativeObjName as NSString)
     }
 
     public func exportBindFunction<T>(_ functionBlock: T) -> BjsNativeExports {
