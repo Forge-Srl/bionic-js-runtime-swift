@@ -69,5 +69,5 @@ class ToyComponent1BjsWrapper: BjsNativeWrapper {
     }
     
     static var _bjsLocator = BjsLocator("TestProject", "ToyComponent1")
-    override class var bjsLocator: BjsLocator { _bjsLocator }
+    override class var bjsLocator: BjsLocator { return _bjsLocator }
 }

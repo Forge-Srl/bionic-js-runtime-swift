@@ -4,18 +4,18 @@ import JavaScriptCore
 class BjsLibTest: XCTestCase {
     
     class Context1Obj1: BjsObject {
-        open class override var bjsLocator: BjsLocator { BjsLocator("context1", "") }
-        class func bjsFactory(_ jsObject: JSValue) -> Context1Obj1 { Context1Obj1(jsObject)}
+        open class override var bjsLocator: BjsLocator { return BjsLocator("context1", "") }
+        class func bjsFactory(_ jsObject: JSValue) -> Context1Obj1 { return Context1Obj1(jsObject)}
     }
     
     class Context1Obj2: BjsObject {
-        open class override var bjsLocator: BjsLocator { BjsLocator("context1", "") }
-        class func bjsFactory(_ jsObject: JSValue) -> Context1Obj2 { Context1Obj2(jsObject)}
+        open class override var bjsLocator: BjsLocator { return BjsLocator("context1", "") }
+        class func bjsFactory(_ jsObject: JSValue) -> Context1Obj2 { return Context1Obj2(jsObject)}
     }
     
     class Context2Obj3: BjsObject {
-        open class override var bjsLocator: BjsLocator { BjsLocator("context2", "") }
-        class func bjsFactory(_ jsObject: JSValue) -> Context2Obj3 { Context2Obj3(jsObject)}
+        open class override var bjsLocator: BjsLocator { return BjsLocator("context2", "") }
+        class func bjsFactory(_ jsObject: JSValue) -> Context2Obj3 { return Context2Obj3(jsObject)}
     }
     
     var instance1: JSValue!

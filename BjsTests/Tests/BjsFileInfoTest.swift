@@ -16,7 +16,7 @@ class BjsFileInfoTest: XCTestCase {
             (fullPath: "path/module.js", directory:"path", fullPathWithoutExt:"path/module", name:"module.js", nameWithoutExt:"module", ext:"js"),
             (fullPath: "/path/../module.js", directory:"/path/..", fullPathWithoutExt:"/path/../module", name:"module.js", nameWithoutExt:"module", ext:"js"),
             (fullPath: "./module", directory:".", fullPathWithoutExt:"./module", name:"module", nameWithoutExt:"module", ext:""),
-            ]
+        ]
         
         
         for expected in expectedResults {

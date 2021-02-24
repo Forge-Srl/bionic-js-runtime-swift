@@ -169,8 +169,8 @@ class ToyClass1: BjsObject {
     // BJS HELPERS
     
     private static var _bjsLocator = BjsLocator("TestProject", "ToyClass1")
-    override class var bjsLocator: BjsLocator { _bjsLocator }
-    class func bjsFactory(_ jsObject: JSValue) -> ToyClass1 { ToyClass1(jsObject)}
+    override class var bjsLocator: BjsLocator { return _bjsLocator }
+    class func bjsFactory(_ jsObject: JSValue) -> ToyClass1 { return ToyClass1(jsObject)}
     
     
     // TESTING HELPERS

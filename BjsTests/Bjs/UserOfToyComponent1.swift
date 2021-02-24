@@ -33,5 +33,5 @@ class UserOfToyComponent1: BjsObject {
     }
     
     private static var _bjsLocator = BjsLocator("TestProject", "UserOfToyComponent1")
-    override class var bjsLocator: BjsLocator { _bjsLocator }
+    override class var bjsLocator: BjsLocator { return _bjsLocator }
 }
